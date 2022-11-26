@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(/img/img1-removebg-preview.pn); */
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10% ;
+}
+.container nav p{
+    width: 140px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.container span{
+    font-size: 50px;
+}
+nav{
+    background-color:  #f00c91;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li{
+    padding: 0px 10px;
+    display: inline-block;
+    list-style: none;
+}
+nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #111010;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.ravi{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-ravi-1{
+    margin-top: 10%;
+    font-size: 25px;
+    flex-basis: 20%;
+}
+.about-ravi-1 h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.about-ravi-1 span{
+    color: red;
+}
+.about-ravi-2{
+    margin-top: 10%;
+    width: 300px;
+    height: 400px;
+    background-color: red;
+    flex-basis: 35%;
+}
+.about-ravi-2 img{
+    border-radius: 15px;
+}
+/* ------------About -------------- */
+#about{
+    padding: 80px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+ .about-col-2{
+    flex-basis: 40%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white; 
+}
+.about-col-2 p{
+    font-size: 20px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0px 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link:hover::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.tab-contents ul li span{
+    font-size: 20px;
+    color: red;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* ----------------Services---------------- */
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background-color: #103c49;
+    padding: 40px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 1s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30x;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background-color: #ff004f;
+    transform: translatey(-10px);
+    /* transform: rotatex(20deg); */
+}
+/* ---------------Portfolio------------ */
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    text-align: center;
+    font-size: 18px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+/* This is hover on work but effect emg */
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+/* Here new btn property of center */
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background-color: #ff004f;
+}
+/* ------------------Contact Me------------- */
+#contact{
+    padding: 80px 0px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+        color: #ff004f;
+        margin-right: 15px;
+        font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translatey(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: #ff004f;
+}
+.contact-right{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    background-color: #ff004f;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
+}
+
+/* -----------CSS for small screen----------- */
+nav ul .fa{
+    display: none;
+}
+nav .fa{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .container nav p{
+        width: 140px;
+        font-size: 15px;
+    }
+    .container span{
+        font-size: 30px;
+    }
+    .about-ravi-1{
+        margin-top: 60%;
+        font-size: 16px;
+        flex-basis: 20%;
+    }
+    .about-ravi-1 h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .about-ravi-2{
+        margin-top: 50%;
+        width: 200px;
+        height: 300px;
+        background-color: red;
+        flex-basis: 35%;
+    }
+    nav ul .fa{
+        display: block;
+        font-size: 25px;
+    }
+    nav .fa{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 20px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    #msg{
+        color: #61b756;
+        margin-top: -40px;
+        display: block;
+        font-size: 15px;
+    }
+}

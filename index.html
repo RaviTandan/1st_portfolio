@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaviTandan portfolio</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <P><span>R</span>avi</P>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="ravi">
+                <div class="about-ravi-1">
+                    <p>Front-end Developer</p>
+                    <h1>Hi, I'm <span>Ravi Tandan</span><br>From Lucknow</h1>
+                </div>
+                <div class="about-ravi-2">
+                    <img src="/img/My project.png" width="100%" height="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- -------------About me ------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/img/ravitandan.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                       Hey,I belong from district Sitapur.I completed my schooling 
+                       from there. I'm good in study so when I passed 10th ,I have 
+                       rewarded  laptop through Chief Minister.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Soft Skill</span><br>Collaboration & Communication<br>Quick learner &
+                                Adaptbility</li>
+                            <li><span>Technical Skills</span><br>Web Developer & Page Designing<br>Bootstrap &
+                                Git-hub</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-Current</span><br>Work on Front-end Developer</li>
+                            <li><span>2021-2022</span><br>HTML and CSS Languages</li>
+                            <li><span>2018-2020</span><br>Work with a marketing Company</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>B.Tech(C.S.E) From AKTU</li>
+                            <li><span>2018</span><br>Intermediate From U.P Board</li>
+                            <li><span>2016</span><br>High School From U.P Board</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- --------Services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>I works on the appearance, layout, and, in some cases, content of a website.
+                         Appearance, for instance, relates to the colors, font, and images used.
+                         Layout refers to how information is structured and categorized. A good 
+                         web design is easy to use</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p>I Works on agile teams.
+                        Creating user flows, wireframes, prototypes and so on.
+                        Visualization tools such as InVision, Sketch, Photoshop, Figma, </p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>I used two common methods for designing websites that work well
+                         both on desktop and mobile are responsive and adaptive design. 
+                        In responsive design, content moves dynamically depending on screen size; 
+                        in adaptive design, the website content is fixed in layout sizes
+                        that match common screen sizes. </p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- -------------Portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/img/ux_ui-01-3.jpg" height="400px" alt="">
+                    <div class="layer">
+                        <h3>UI & UX Based Template</h3>
+                        <p>I build a lots of responsive Template and Landing Page 
+                            Using core concept of CSS feature like - 3d background ,
+                            on click change the stylesheet of text and image.
+                        </p>
+                        <a href="#">
+                        <i class="fa fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/img/website img.gif" height="400px" alt="">
+                    <div class="layer">
+                        <h3>Website</h3>
+                        <p>I build a bootstrap responsive website which is hosted through github.
+                            And also I build this responsive Portfolio website through learning.
+                            And other portfolio website and clone of facebook.
+                        </p>
+                        <a href="#">
+                        <i class="fa fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/img/Blue Modern Technology Business Presentation.jpg" height="400px" alt="">
+                    <div class="layer">
+                        <h3>Technology</h3>
+                        <p>I worked on Bootstrap, Github technology and Replit.
+                            So, I quickly adopt any technology with your company.
+                        </p>
+                        <a href="#">
+                        <i class="fa fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <hr>
+<!-- ----------------------CONTACT------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+               <p><a href="#"><i class="fa fa-send"></i></a>ravitandan800@gmail.com</p>
+               <p><a href="#"><i class="fa fa-phone"></i></a>8004950121</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ravi-tandan-219090250"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://whatsapp.com/dl/"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/ravi.tandan.528"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?i=1vlkm67667jey&utm_content=ibj3jb7"><i class="fa fa-instagram"></i></a>
+                </div>
+                <a href="/img/Updated Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+        <div class="copyright">
+            <p>Copyright &#169 Ravi Tandan. Made<i class="fa fa-heart"></i>  by using coding skill</p>
+        </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+      var sidemeu =  document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbygkGFQzGvT7O7Gndd5lU9F-bD9zB9JfgJz3l9acAko1VTnyyKvQSI7ZGilY_NvPLdo/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Massage Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
