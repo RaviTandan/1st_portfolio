@@ -181,14 +181,14 @@
                     <a href="https://www.facebook.com/ravi.tandan.528"><i class="fa fa-facebook"></i></a>
                     <a href="https://www.instagram.com/invites/contact/?i=1vlkm67667jey&utm_content=ibj3jb7"><i class="fa fa-instagram"></i></a>
                 </div>
-                <a href="Updated Resume.pdf" download class="btn btn2">Download CV</a>
+                <a href="Updated Resume.pdf" download class="btn btn2" id="butn1">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <button type="submit" class="btn btn2" id="butn2">Submit</button>
                 </form>
                 <span id="msg"></span>
             </div>
@@ -210,6 +210,28 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+           let b = document.getElementById("butn1")
+        b.onclick =()=>{
+            setTimeout(()=>{
+                b.style.background= "white"
+                b.style.color= "black"
+            },100)
+            setTimeout(()=>{
+                b.style.background= "#ff004f"
+                b.style.color= "white"
+            },1000)
+        }
+        let a = document.getElementById("butn2")
+        a.onclick =()=>{
+            setTimeout(()=>{
+                a.style.background= "white"
+                a.style.color= "black"
+            },100)
+            setTimeout(()=>{
+                a.style.background= "#ff004f"
+                a.style.color= "white"
+            },1000)
         }
 
     </script>
