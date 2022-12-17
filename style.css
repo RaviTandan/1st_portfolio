@@ -19,7 +19,7 @@ body{
     background-position: center;
 }
 .container{
-    padding: 10px 10% ;
+    padding: 10px 0% ;
 }
 .container nav p{
     width: 140px;
@@ -31,11 +31,12 @@ body{
     font-size: 50px;
 }
 nav{
-    background-color:  #f00c91;
+    background-color: #033f47;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0px 20px;
 }
 nav ul li{
     padding: 0px 10px;
