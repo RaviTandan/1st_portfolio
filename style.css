@@ -37,6 +37,7 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     padding: 0px 20px;
+    animation: animforSubtitle 5s ease-out infinite;
 }
 nav ul li{
     padding: 0px 10px;
@@ -69,6 +70,7 @@ nav ul li a:hover::after{
 }
 .about-ravi-1{
     margin-top: 10%;
+    margin-left: 20px;
     font-size: 25px;
     flex-basis: 20%;
 }
@@ -114,6 +116,8 @@ nav ul li a:hover::after{
     color: white; 
 }
 .about-col-2 p{
+    line-height: 30px;
+    margin-top: 40px;
     font-size: 20px;
 }
 .tab-titles{
@@ -126,6 +130,10 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    transition: all 0.3s ease;
+}
+.tab-links:hover{
+    transform: translateY(-3px);
 }
 .tab-links::after{
     content: '';
@@ -152,6 +160,30 @@ nav ul li a:hover::after{
 }
 .tab-contents{
     display: none;
+}
+#experience{
+    animation: animforExperience 1s ease-in;
+}
+@keyframes animforExperience {
+    form {
+        transform: translateX(0) ;
+    }
+
+    to {
+        transform: translateX(90px);
+    }
+}
+#education{
+    animation: animforeducation 1s ease-in;
+}
+@keyframes animforeducation {
+    form {
+        transform: translateX(0) ;
+    }
+
+    to {
+        transform: translateX(200px);
+    }
 }
 .tab-contents.active-tab{
     display: block;
@@ -342,6 +374,22 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
+/* --------- -CSS for .sub-title------------- */
+.sub-title{
+    animation: animforSubtitle 5s ease-out infinite;
+}
+
+@keyframes animforSubtitle {
+    0% {
+        background-image: linear-gradient(rgba(253, 252, 252, 0.8),#033f47);
+    }
+    50% {
+        background-image: linear-gradient(rgba(253, 252, 252, 0.8),#f848a9);
+    }
+    100% {
+        background-image: linear-gradient(rgba(253, 252, 252, 0.8),#fc0808);
+    }
+}
 
 /* -----------CSS for small screen----------- */
 nav ul .fa{
@@ -351,6 +399,9 @@ nav .fa{
     display: none;
 }
 @media only screen and (max-width: 600px){
+     #header{
+        height: 80vh;
+    }
     .container nav p{
         width: 140px;
         font-size: 15px;
