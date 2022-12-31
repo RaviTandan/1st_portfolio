@@ -69,8 +69,8 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 .about-ravi-1{
-    margin-top: 10%;
     margin-left: 20px;
+    margin-top: 6rem;
     font-size: 25px;
     flex-basis: 20%;
 }
@@ -82,7 +82,8 @@ nav ul li a:hover::after{
     color: red;
 }
 .about-ravi-2{
-    margin-top: 10%;
+    margin-top: 6rem;
+    margin-right: 20px;
     width: 300px;
     height: 400px;
     background-color: red;
@@ -313,6 +314,11 @@ nav ul li a:hover::after{
 }
 .contact-left p{
     margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact-left p:hover{
+     transform: translateY(-5px);
 }
 .contact-left p i{
         color: #ff004f;
@@ -399,9 +405,6 @@ nav .fa{
     display: none;
 }
 @media only screen and (max-width: 600px){
-     #header{
-        height: 80vh;
-    }
     .container nav p{
         width: 140px;
         font-size: 15px;
@@ -413,13 +416,14 @@ nav .fa{
         margin-top: 60%;
         font-size: 16px;
         flex-basis: 20%;
+        line-height: 40px;
     }
     .about-ravi-1 h1{
         font-size: 30px;
         margin-top: 20px;
     }
     .about-ravi-2{
-        margin-top: 50%;
+        margin-top: 35%;
         width: 200px;
         height: 300px;
         background-color: red;
@@ -434,19 +438,19 @@ nav .fa{
         font-size: 25px;
     }
     nav ul{
-        background-color: #ff004f;
+        background-image: linear-gradient(rgba(252, 250, 250, 0.1),#ff004f);
         position: fixed;
         top: 0;
         right: -200px;
         width: 200px;
-        height: 100vh;
+        height: 35vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
     }
     nav ul li{
         display: block;
-        margin: 25px;
+        margin: 15px;
     }
     nav ul .fa{
         position: absolute;
